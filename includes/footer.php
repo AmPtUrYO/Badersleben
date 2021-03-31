@@ -1,4 +1,4 @@
-    <div class="container">
+    <div class="p-3 bg-secondary text-white fixed-bottom">
         <?php echo "Impressum" . "Kontakt" . "Datenschutz" . date('d.m.Y') ?>
     </div>
 </div>
