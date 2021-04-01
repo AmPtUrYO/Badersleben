@@ -1,4 +1,5 @@
-    <div class="p-3 bg-secondary text-white fixed-bottom">
+ </div>  
+    <div class="footer p-3 bg-secondary text-white">
         <?php echo "Impressum" . "Kontakt" . "Datenschutz" . date('d.m.Y') ?>
     </div>
 </div>

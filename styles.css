@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas:
+    "header header header header"
+    "sidebar main main main"
+    "footer footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav {
+  width: 25%;
+  grid-area: sidebar;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  overflow: hidden;
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
