@@ -14,7 +14,7 @@
         <img src="index.png" class="img-fluid">
     </div>
     <div class="nav">
-        <nav class="d-flex navbar navbar-expand-md bg-light navbar-light flex-column"> 
+        <nav class="d-flex navbar navbar-expand-md bg-light navbar-light flex-column" style="min-width: 275px"> 
             <ul class="nav nav-pills mb-auto flex-column navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Startseite</a>

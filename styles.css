@@ -13,7 +13,6 @@
 }
 
 .nav {
-  width: 25%;
   grid-area: sidebar;
 }
 
