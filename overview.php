@@ -1,12 +1,13 @@
 <?php 
-$title = 'Index';
+$title = ucfirst($_GET['id']);
 require_once 'includes/header.php';
 require_once 'includes/sidebar.php';
+$result = $connection->query("SELECT * FROM content WHERE section='" . $_GET['id']."' ORDER BY date DESC");
 ?>
 
-<h1 class="text-center">Informationsportal Badersleben</h1>
-<p>Aktueller Brief des Ortsbügermeisters <a href="http://badersleben.de/ob/Infoblattob.pdf">hier</a></p>
-<h2 class="text-center">+++Neuigkeiten+++</h2>
+
+<h1 class="text-center text-capitalize"><?php echo $_GET['id']; ?></h1>
+
 <?php
  foreach($result as $row){?>
     <div class="card">
