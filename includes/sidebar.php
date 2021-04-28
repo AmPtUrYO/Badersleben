@@ -1,5 +1,5 @@
 <div class="nav">
-        <nav class="d-flex navbar navbar-expand-md bg-light navbar-light flex-column" style="min-width: 275px"> 
+        <nav class="d-flex navbar navbar-expand-md bg-light navbar-light flex-column"> 
             <div class="nav nav-pills mb-auto flex-column navbar-nav" style="width: 100%">
                 <div class="nav-item">
                     <a class="nav-link" href="index.php">Startseite</a>
