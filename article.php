@@ -1,5 +1,5 @@
 <?php 
-$title = 'Index';
+$title = $article->section;
 require_once 'includes/header.php';
 require_once 'includes/sidebar.php';
 $article = $connection->query("SELECT * FROM content WHERE content_id=" . $_GET['id'])->fetchObject();
@@ -33,7 +33,7 @@ $article = $connection->query("SELECT * FROM content WHERE content_id=" . $_GET[
                     <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/tunnel.jpg" alt="Tunnel">
                 </a>
             </div>
-            <div class="col-sm-12 col-md-8">
+            <div class="col-sm-6 col-md-4">
                 <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/traffic.jpg">
                     <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/traffic.jpg" alt="Traffic">
                 </a>

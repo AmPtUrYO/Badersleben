@@ -55,17 +55,25 @@
   padding: 5px;
 }
 
+.editForm {
+  margin: 5px auto 5px auto;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  justify-content: center;
+}
+
 /*gallery*/
 
 .gallery-container {
   background-color: #fff;
   color: #35373a;
   min-height: 100vh;
-  padding: 0px;
 }
 
 .tz-gallery {
-  padding: 40px;
+  padding: 0px;
 }
 
 /* Override bootstrap column paddings */
