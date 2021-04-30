@@ -4,6 +4,7 @@ require_once '../includes/header.php';
 ?>
 
 <div style="width: 200%">
+<h4>Neuer Beitrag</h4>
 <form action="" method="post" class="editForm">
     <input type="text" name="title" placeholder="Titel">
     <select name="section">        
