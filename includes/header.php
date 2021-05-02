@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
     <link rel="stylesheet" href="/badersleben/styles.css">
-    <title>Badersleben <?php echo $title ?></title>
+    <title>Badersleben <?php /*echo $title*/ ?></title>
 </head>
 <body style="background: brown">
 <?php require 'database.php';?>

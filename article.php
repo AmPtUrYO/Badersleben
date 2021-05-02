@@ -1,15 +1,16 @@
 <?php 
-$title = $article->section;
 require_once 'includes/header.php';
 require_once 'includes/sidebar.php';
-$article = $connection->query("SELECT * FROM content WHERE content_id=" . $_GET['id'])->fetchObject();
+$article = DB::run("SELECT content.content_id, content.title, users.name, sections.section_name, content.text, content.date, content.image_url FROM content INNER JOIN sections ON content.section_id=sections.section_id INNER JOIN users ON content.user_id=users.user_id WHERE content_id=" . $_GET['id'])->fetchObject();
+//$title = $article->section;
+$date = date_create($article->date);
 ?>
 
 
 <h3 class="text-center"><?php echo $article->title ?></h3>
-<p class="text-end fst-italic"><?php echo $article->section."\n" ?> </p>
+<p class="text-end fst-italic"><?php echo $article->section_name."\n" ?> </p>
 <p><?php echo $article->text."\n" ?></p>
-<p><?php echo $article->user_id . " " . $article->date ?></p>
+<p><?php echo $article->name . " " . date_format($date, 'd.m.Y') ?></p>
 <img src="https://placekitten.com/200/100" class="img-fluid">
 
 <div class="gallery-container">

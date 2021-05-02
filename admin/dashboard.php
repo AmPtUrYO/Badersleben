@@ -1,7 +1,6 @@
 <?php 
-$title = ucfirst($_GET['id']);
 require_once '../includes/header.php';
-$result = $connection->query("SELECT * FROM content WHERE section='" . $_GET['id']."' ORDER BY date DESC");
+$result = DB::run("SELECT * FROM content WHERE section='" . $_GET['id']."' ORDER BY date DESC");
 ?>
 <div class="nav">
         <nav class="d-flex navbar navbar-expand-md bg-light navbar-light flex-column"> 
