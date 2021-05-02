@@ -7,7 +7,7 @@
         require_once 'dbh.inc.php';
         require_once 'functions.inc.php';
 
-        loginUser($connection, $username, $pwd);
+        loginUser($username, $pwd);
     }else{
         header("location: /badersleben/admin/login.php");
         exit();
