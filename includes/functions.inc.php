@@ -8,7 +8,7 @@ function loginUser($username, $pwd){
     }
 
     $pwdHashed = $uidExists["password"];
-    $checkPwd = password_verify($pwd, $pwdHashed);
+    $checkPwd = ($pwd == $pwdHashed) ? true : false;//password_verify($pwd, $pwdHashed);
     if($checkPwd){
         session_start();
         $_SESSION["user_id"] = $uidExists["user_id"];

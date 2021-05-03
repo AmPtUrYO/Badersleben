@@ -1,6 +1,6 @@
 <?php 
 require_once '../includes/header.php';
-$result = DB::run("SELECT * FROM content WHERE section='" . $_GET['id']."' ORDER BY date DESC");
+$result = DB::run("SELECT * FROM users WHERE section_id='" . $_SESSION["section_id"]."' ORDER BY date DESC");
 ?>
 <div class="nav">
         <nav class="d-flex navbar navbar-expand-md bg-light navbar-light flex-column"> 
@@ -25,7 +25,7 @@ $result = DB::run("SELECT * FROM content WHERE section='" . $_GET['id']."' ORDER
 
 
 
-<h1 class="text-center text-capitalize"><?php echo $_GET['id']; ?></h1>
+<h1 class="text-center text-capitalize">Hallo <?php echo $_SESSION["name"]; ?></h1>
 
 <?php
  foreach($result as $row){?>
