@@ -3,9 +3,9 @@ $title = 'Admin';
 require_once '../includes/header.php';
 ?>
 
-<div style="width: 200%">
+<div>
 <h4>Neuer Beitrag in der Rubrik <?php echo '"einfügen"' ?></h4>
-<form action="" method="post" class="editForm" style="widht:100%">
+<form action="" method="post" class="editForm">
     <input type="text" name="title" placeholder="Titel">
     <textarea name="text" rows="10" cols="30" placeholder="Text"></textarea>
     <span class="dragBox">

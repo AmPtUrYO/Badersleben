@@ -56,6 +56,15 @@
 }
 
 /*edit*/
+
+.editForm {
+  width: 200%;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 5px;
+  padding-bottom: 5px;
+}
+
 .dragBox {
   width: 100%;
   height: 100px;

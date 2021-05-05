@@ -1,6 +1,9 @@
 <?php 
 require_once '../includes/header.php';
-$result = DB::run("SELECT users.name, content.content_id, content.title FROM content INNER JOIN sections ON content.section_id=sections.section_id INNER JOIN users ON content.user_id=users.user_id WHERE users.section_id='" . $_SESSION["section_id"]."' ORDER BY date DESC");
+$result = DB::run("SELECT users.name, content.content_id, content.title, sections.section_name, sections.section_id FROM content INNER JOIN sections ON content.section_id=sections.section_id INNER JOIN users ON content.user_id=users.user_id WHERE users.user_id='" . $_SESSION["user_id"]."' ORDER BY date DESC");
+$otherResult = $result->fetchObject();
+$content = DB::run("SELECT * FROM content INNER JOIN sections ON content.section_id=sections.section_id WHERE content.section_id='" . $otherResult->section_id."' ORDER BY date DESC");
+var_dump($otherResult);
 ?>
 <div class="nav">
         <nav class="d-flex navbar navbar-expand-md bg-light navbar-light flex-column"> 
@@ -25,10 +28,10 @@ $result = DB::run("SELECT users.name, content.content_id, content.title FROM con
 
 
 
-<h1 class="text-center text-capitalize">Hallo <?php echo $result['users.name']; ?></h1>
+<h1 class="text-center text-capitalize">Hallo <?php echo $otherResult->name; ?></h1>
 
 <?php
- foreach($result as $row){?>
+ foreach($content as $row){?>
     <div class="card">
     <i class="fas fa-pen"></i>
         <?php include '../card.php' ?>
