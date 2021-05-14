@@ -20,16 +20,16 @@
                     <a class="nav-link" href="#">Grundschule Albert Klaus</a>
                 </div>
                 <div class="nav-item">
-                    <a class="nav-link" href="#">Heimatverein</a>
+                    <a class="nav-link" href="overview.php?id=hmv">Heimatverein</a>
                 </div>
                 <div class="nav-item">
-                    <a class="nav-link" href="#">Freiwillige Feuerwehr</a>
+                    <a class="nav-link" href="overview.php?id=ffw">Freiwillige Feuerwehr</a>
                 </div>
                 <div class="nav-item">
                     <a class="nav-link" href="#">Männerchor</a>
                 </div>
                 <div class="nav-item">
-                    <a class="nav-link" href="overview.php?id=sportverein">Sportverein</a>
+                    <a class="nav-link" href="overview.php?id=spv">Sportverein</a>
                 </div>
                 <div class="nav-item">
                     <a class="nav-link" href="#">Pfadfinder</a>
